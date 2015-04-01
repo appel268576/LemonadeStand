@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     var supplies = Supplies(aMoney: 10, aLemons: 1, aIceCubes: 1)
     let price = Price()
     
+    var lemonsToPurchase = 0
+    var iceCubesToPurchase = 0
+    var lemonsToMix = 0
+    var iceCubesToMix = 0
     
     
     override func viewDidLoad() {
@@ -62,6 +66,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startDayButtonPressed(sender: UIButton) {
+    }
+    
+    // Helper function
+    func updateMainView () {
+        moneySupplyCount.text = "$\(supplies.money)"
+        lemonSupplyCount.text = "$\(supplies.lemons) lemons"
+        iceCubeSupplyCount.text = "$\(supplies.iceCubes) ice cubes"
+        
+        lemonPurchaseCount.text = "$\(lemonsToPurchase)"
+        iceCubePurchaseCount.text = "$\(iceCubesToPurchase)"
+        
+        lemonMixCount.text = "$\(lemonsToMix)"
+        iceCubeMixCount.text = "$\(iceCubesToMix)"
     }
 }
 
