@@ -14,6 +14,7 @@
 		B28FE3EC1AC924DA00F8DEDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28FE3EB1AC924DA00F8DEDA /* Images.xcassets */; };
 		B28FE3EF1AC924DA00F8DEDA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28FE3ED1AC924DA00F8DEDA /* LaunchScreen.xib */; };
 		B28FE3FB1AC924DA00F8DEDA /* LemonadeStandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28FE3FA1AC924DA00F8DEDA /* LemonadeStandTests.swift */; };
+		B2D7C5B51ACBC9F1007ED459 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7C5B41ACBC9F1007ED459 /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B28FE3F41AC924DA00F8DEDA /* LemonadeStandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeStandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28FE3F91AC924DA00F8DEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28FE3FA1AC924DA00F8DEDA /* LemonadeStandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeStandTests.swift; sourceTree = "<group>"; };
+		B2D7C5B41ACBC9F1007ED459 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				B28FE3E41AC924DA00F8DEDA /* AppDelegate.swift */,
 				B28FE3E61AC924DA00F8DEDA /* ViewController.swift */,
 				B26AD6001ACBC863008EEE4B /* Supplies.swift */,
+				B2D7C5B41ACBC9F1007ED459 /* Price.swift */,
 				B28FE3E81AC924DA00F8DEDA /* Main.storyboard */,
 				B28FE3EB1AC924DA00F8DEDA /* Images.xcassets */,
 				B28FE3ED1AC924DA00F8DEDA /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28FE3E71AC924DA00F8DEDA /* ViewController.swift in Sources */,
+				B2D7C5B51ACBC9F1007ED459 /* Price.swift in Sources */,
 				B26AD6011ACBC863008EEE4B /* Supplies.swift in Sources */,
 				B28FE3E51AC924DA00F8DEDA /* AppDelegate.swift in Sources */,
 			);
