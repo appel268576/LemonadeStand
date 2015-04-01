@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B26AD6011ACBC863008EEE4B /* Supplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AD6001ACBC863008EEE4B /* Supplies.swift */; };
 		B28FE3E51AC924DA00F8DEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28FE3E41AC924DA00F8DEDA /* AppDelegate.swift */; };
 		B28FE3E71AC924DA00F8DEDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28FE3E61AC924DA00F8DEDA /* ViewController.swift */; };
 		B28FE3EA1AC924DA00F8DEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28FE3E81AC924DA00F8DEDA /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B26AD6001ACBC863008EEE4B /* Supplies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supplies.swift; sourceTree = "<group>"; };
 		B28FE3DF1AC924DA00F8DEDA /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28FE3E31AC924DA00F8DEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28FE3E41AC924DA00F8DEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				B28FE3E41AC924DA00F8DEDA /* AppDelegate.swift */,
 				B28FE3E61AC924DA00F8DEDA /* ViewController.swift */,
+				B26AD6001ACBC863008EEE4B /* Supplies.swift */,
 				B28FE3E81AC924DA00F8DEDA /* Main.storyboard */,
 				B28FE3EB1AC924DA00F8DEDA /* Images.xcassets */,
 				B28FE3ED1AC924DA00F8DEDA /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28FE3E71AC924DA00F8DEDA /* ViewController.swift in Sources */,
+				B26AD6011ACBC863008EEE4B /* Supplies.swift in Sources */,
 				B28FE3E51AC924DA00F8DEDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				B28FE4001AC924DA00F8DEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B28FE4011AC924DA00F8DEDA /* Build configuration list for PBXNativeTarget "LemonadeStandTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				B28FE4031AC924DA00F8DEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
