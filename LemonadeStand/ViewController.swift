@@ -68,17 +68,24 @@ class ViewController: UIViewController {
     @IBAction func startDayButtonPressed(sender: UIButton) {
     }
     
-    // Helper function
+    // Helper functions
     func updateMainView () {
+        
         moneySupplyCount.text = "$\(supplies.money)"
-        lemonSupplyCount.text = "$\(supplies.lemons) lemons"
-        iceCubeSupplyCount.text = "$\(supplies.iceCubes) ice cubes"
+        lemonSupplyCount.text = "\(supplies.lemons) lemons"
+        iceCubeSupplyCount.text = "\(supplies.iceCubes) ice cubes"
         
-        lemonPurchaseCount.text = "$\(lemonsToPurchase)"
-        iceCubePurchaseCount.text = "$\(iceCubesToPurchase)"
+        lemonPurchaseCount.text = "\(lemonsToPurchase)"
+        iceCubePurchaseCount.text = "\(iceCubesToPurchase)"
         
-        lemonMixCount.text = "$\(lemonsToMix)"
-        iceCubeMixCount.text = "$\(iceCubesToMix)"
+        lemonMixCount.text = "\(lemonsToMix)"
+        iceCubeMixCount.text = "\(iceCubesToMix)"
+    }
+    
+    func showAlertWithText (header: String = "Warning", message: String) {
+        var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
 
