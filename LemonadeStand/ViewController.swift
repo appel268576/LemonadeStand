@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateMainView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,9 +43,27 @@ class ViewController: UIViewController {
 
     // IB Actions
     @IBAction func purchaseLemonButtonPressed(sender: UIButton) {
+        if supplies.money >= price.lemon {
+            lemonsToPurchase += 1
+            supplies.money -= price.lemon
+            supplies.lemons += 1
+            updateMainView()
+        }
+        else {
+            showAlertWithText(message: "You don't have enough money")
+        }
     }
     
     @IBAction func purchaseIceCubeButtonPressed(sender: UIButton) {
+        if supplies.money >= price.iceCbue {
+            iceCubesToPurchase += 1
+            supplies.money -= price.iceCbue
+            supplies.iceCubes += 1
+            updateMainView()
+        }
+        else {
+            showAlertWithText(header: "Error", message: "You don't have enough money")
+        }
     }
 
     @IBAction func unpurchaseLemonButtonPressed(sender: UIButton) {
@@ -66,6 +85,38 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startDayButtonPressed(sender: UIButton) {
+        
+        let customers = Int(arc4random_uniform(UInt32(11)))
+        println(customers)
+        
+        if lemonsToMix == 0 || iceCubesToMix == 0 {
+            showAlertWithText(message: "you need to add at least 1 lemon and 1 ice cube")
+        }
+        else {
+            let lemonadeRatio = Double(lemonsToMix) / Double(iceCubesToMix)
+            
+            for x in 0...customers{
+                let preference = Double(arc4random_uniform(UInt32(101))) / 100
+                
+                if preference < 0.4 && lemonadeRatio > 1 {
+                    supplies.money += 1
+                    println("paid")
+                }
+                else if preference > 0.6 && lemonadeRatio < 1 {
+                    supplies.money += 1
+                    println("paid again")
+                }
+                else if preference <= 0.6 && lemonadeRatio == 1 {
+                    supplies.money += 1
+                    println("paid again")
+                }
+                else {
+                    println("Else statement evaluating")
+                }
+            }
+            
+        }
+        
     }
     
     // Helper functions
